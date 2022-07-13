@@ -42,7 +42,8 @@
 .course {
   margin: 40px;
   width: 320px;
-  height: 300px;
+  height: auto;
+  padding: 0 10px;
   background-color: white;
   box-shadow: 0 0 30px #dfdfdf;
   border-radius: 10px;
@@ -109,4 +110,43 @@
   background-color: #0077ff;
   color: white;
   border-radius: 5px;
+}
+
+.up,
+.minus {
+  font-size: 20px;
+  width: 100px;
+  margin: 30px;
+  color: white;
+  background-color: #0077ff;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 513px) {
+  .buy-btn {
+    flex-direction: column;
+  }
+  .course {
+    height: 360px;
+  }
+  .up,
+  .minus {
+    width: 60px;
+    margin: 10px;
+  }
+  .buy-btn {
+    margin-top: 30px;
+  }
+
+  .buy {
+    padding: 15px 50px;
+  }
+
+  .course-name {
+    font-size: 10px;
+  }
 }
